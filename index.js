@@ -1,3 +1,5 @@
+import './index.css'
+
 import * as THREE from 'three'
 
 console.log(THREE)
@@ -11,15 +13,15 @@ const el = document.getElementById("canvas");
 el.innerHTML = '';
 el.appendChild(renderer.domElement);
 
-var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-var cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+var geometry = new THREE.BoxGeometry(1, 1, 1);
+var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+var cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
 
 camera.position.z = 5;
 
 function animate() {
-	requestAnimationFrame( animate );
-	renderer.render( scene, camera );
+	requestAnimationFrame(animate);
+	renderer.render(scene, camera);
 }
 animate();
