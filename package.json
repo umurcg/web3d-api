@@ -1,0 +1,23 @@
+{
+  "name": "web3d-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/parcel-bundler/bin/cli.js index.html",
+    "build": "./node_modules/parcel-bundler/bin/cli.js build index.html",
+    "watch": "./node_modules/parcel-bundler/bin/cli.js watch index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "latest",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.101.1"
+  }
+}
